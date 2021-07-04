@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <Color x:Key="AccentColor">Red</Color>
+    <Color x:Key="SecondaryAccentColor">#FFFF2424</Color>
+    
+    <!-- background image "Designed by Creative_hat / Freepik" -->
+    <Rectangle x:Key="WindowBackgroundContent" x:Shared="false">
+        <Rectangle.Fill>
+            <ImageBrush Opacity=".15" ImageSource="/Resources/abstract.png" Stretch="Fill" />
+        </Rectangle.Fill>
+    </Rectangle>
+</ResourceDictionary>

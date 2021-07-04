@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="SignalStrength.Wpf.View.Pages.ScanSettingsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:res="clr-namespace:SignalStrength.Wpf.Properties"
+             xmlns:setting="clr-namespace:SignalStrength.Wpf.View"
+             xmlns:local="clr-namespace:SignalStrength.Wpf.View.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="400"
+             >
+    
+    <UserControl.Resources>
+        <setting:SettingsScan x:Key="_scanSettings"/>
+    </UserControl.Resources>
+
+
+    <Grid >
+        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+            <StackPanel Margin="4" MaxHeight="200" VerticalAlignment="Top">
+                <TextBlock Text="{x:Static res:Resources.ScanSettingInterval}" 
+                           Style="{StaticResource Heading2}" Margin="0,0,0,8"/>
+                <ScrollViewer HorizontalAlignment="Left">
+                    <StackPanel Margin="6" >
+                        <Separator Background="{DynamicResource Accent}" Margin="0,8,0,0" />
+                        <TextBlock HorizontalAlignment="Center">
+                              <Run Text="{x:Static res:Resources.ScanSettingSliderMainContent}"/>
+                              <Run Text=":  "/>
+                              <Run Text="{Binding Value, ElementName=slider}" FontSize="17" Foreground="{DynamicResource Accent}" FontWeight="SemiBold"/>
+                              <Run Text=" "/>
+                              <Run Text="{x:Static res:Resources.Seconds}"/>
+                        </TextBlock>
+                        <Separator HorizontalAlignment="Stretch"/>
+                        <StackPanel Orientation="Horizontal" >
+                            <Label Content="0" Width="20" HorizontalAlignment="Left" HorizontalContentAlignment="Right"/>
+                            <Label Content="60" Width="350" HorizontalAlignment="Right" HorizontalContentAlignment="Right"/>
+                        </StackPanel>
+                        <Slider  x:Name="slider"
+                                 Orientation="Horizontal"
+                                 IsSelectionRangeEnabled="True"
+                                 SelectionStart="10" 
+                                 SelectionEnd="50"
+                                 TickPlacement="Both" 
+                                 Margin="16,0,16,0" 
+                                 Minimum="1"
+                                 Maximum="60" 
+                                 LargeChange="5" 
+                                 SmallChange="1" 
+                                 IsSnapToTickEnabled="True" 
+                                 Value="{Binding Current.Interval, Mode=TwoWay, Source={StaticResource _scanSettings}}"
+                                  />
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{x:Static res:Resources.ScanSettingSliderFast}" FontSize="9"  Margin="10,0,330,0"/>
+                            <Label Content="{x:Static res:Resources.ScanSettingSliderSlow}" FontSize="9"/>
+                        </StackPanel>
+                        <Separator Margin="0,10" HorizontalAlignment="Stretch"/>
+                        <Separator Background="{DynamicResource  Accent}" Margin="0,0,0,8"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

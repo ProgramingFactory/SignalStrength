@@ -1,0 +1,82 @@
+﻿<mui:ModernWindow x:Class="SignalStrength.Wpf.View.MainWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:local="clr-namespace:SignalStrength.Wpf.View"
+                 xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                 xmlns:controls="clr-namespace:FirstFloor.ModernUI.Windows.Controls;assembly=FirstFloor.ModernUI"
+                 xmlns:res="clr-namespace:SignalStrength.Wpf.Properties"
+                 mc:Ignorable="d"
+                 Title="{x:Static res:Resources.AppName}"
+                 Height="650" Width="1000" 
+                 IsTitleVisible="True"
+                 MinHeight="600" MinWidth="700"
+                 ContentSource="View/Pages/SplashScreenPage.xaml"
+                   >
+    <controls:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="{x:Static res:Resources.Settings}" Source="View/Holders/StyleSettingsHolder.xaml" />
+        <mui:Link DisplayName="{x:Static res:Resources.About}" Source="View/Holders/AboutHolder.xaml" />
+    </controls:ModernWindow.TitleLinks>
+
+    <controls:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Info">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="{x:Static res:Resources.Application}" Source="View/Pages/SplashScreenPage.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="{x:Static res:Resources.Networks}">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="{x:Static res:Resources.Networks}" Source="View/Pages/NetInfoPage.xaml"/>
+                <mui:Link DisplayName="{x:Static res:Resources.Gauge}" Source="View/Pages/GaugePage.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="{x:Static res:Resources.Charts}">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="{x:Static res:Resources.Networks}" Source="View/Pages/NetworksGraphPage.xaml" />
+                <mui:Link DisplayName="{x:Static res:Resources.Channals24}" Source="View/Holders/ChannalGraphHolder.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </controls:ModernWindow.MenuLinkGroups>
+    
+</mui:ModernWindow>
+<!--<mui:ModernWindow x:Class="SignalStrengthDD.Wpf.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignalStrengthDD.Wpf"
+        mc:Ignorable="d"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:controls="clr-namespace:FirstFloor.ModernUI.Windows.Controls;assembly=FirstFloor.ModernUI"
+        Title="Signal Strength" Height="500" Width="950" 
+        IsTitleVisible="True"
+        MinHeight="500" MinWidth="850"
+        ContentSource="View/Pages/SplashScreenPage.xaml"
+        >
+    <controls:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Settings" Source="View/Holders/StyleSettingsHolder.xaml"/>
+    </controls:ModernWindow.TitleLinks>
+
+    <controls:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Info">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Application" Source="View/Pages/SplashScreenPage.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Networks">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Networks" Source="View/Pages/NetInfoPage.xaml"/>
+                <mui:Link DisplayName="Gauge" Source="View/Pages/GaugePage.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Charts">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Networks" Source="View/Pages/NetworksGraphPage.xaml" />
+                <mui:Link DisplayName="Speed" Source="View/Pages/NetworkGraphicPage.xaml"/>
+                <mui:Link DisplayName="Channals" Source="View/Holders/ChannalGraphHolder.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </controls:ModernWindow.MenuLinkGroups>
+
+</mui:ModernWindow>-->

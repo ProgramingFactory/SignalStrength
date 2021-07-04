@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="SignalStrength.Wpf.View.Holders.StyleSettingsHolder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SignalStrength.Wpf.View.Holders"
+             xmlns:res="clr-namespace:SignalStrength.Wpf.Properties"
+             mc:Ignorable="d" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             d:DesignHeight="450" d:DesignWidth="500"
+             >
+    <Grid Style="{StaticResource ContentRoot}">
+        <mui:ModernTab SelectedSource="/View/Pages/LanguageSettingsPage.xaml" Layout="List" ListWidth="150">
+            <mui:ModernTab.Links>
+                <mui:Link DisplayName="{x:Static res:Resources.Language}" Source="/View/Pages/LanguageSettingsPage.xaml" />
+                <mui:Link DisplayName="{x:Static res:Resources.VisualSettingName}" Source="/View/Pages/ThemeSettingsPage.xaml" />
+                <mui:Link DisplayName="{x:Static res:Resources.ScanSettingName}" Source="/View/Pages/ScanSettingsPage.xaml"/>
+                <mui:Link DisplayName="{x:Static res:Resources.Chart2DSettingName}" Source="/View/Pages/ChartSettingsPage.xaml" />
+                <mui:Link DisplayName="{x:Static res:Resources.Channal3DSettingName}" Source="/View/Pages/Graphic3DSettingsPage.xaml" />
+                <mui:Link DisplayName="{x:Static res:Resources.ResetSettingName}" Source="/View/Pages/RestartSettingsPage.xaml" />
+            </mui:ModernTab.Links>
+        </mui:ModernTab>
+    </Grid>
+</UserControl>

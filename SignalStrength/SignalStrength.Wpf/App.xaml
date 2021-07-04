@@ -1,0 +1,26 @@
+﻿<Application x:Class="SignalStrength.Wpf.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SignalStrength.Wpf"
+             xmlns:View="clr-namespace:SignalStrength.Wpf.View"
+             xmlns:convert="clr-namespace:SignalStrength.Wpf.Converters"
+             StartupUri="View/MainWindow.xaml" 
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--#region  miu-->
+                <ResourceDictionary Source="pack://application:,,,/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/FirstFloor.ModernUI;component/Assets/ModernUI.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/FirstFloor.ModernUI;component/Themes/ModernDialog.xaml"/>
+                <!--#endregion mui-->
+                <!--#region SignalStrength resource-->
+                <!--<ResourceDictionary Source="/Styling/AppColors.xaml"/>-->
+                <ResourceDictionary Source="/Styling/ControlsStyling.xaml"/>
+                <!--#endregion-->
+            </ResourceDictionary.MergedDictionaries>
+            <convert:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+            <View:SettingsScan x:Key="SettingsScan"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

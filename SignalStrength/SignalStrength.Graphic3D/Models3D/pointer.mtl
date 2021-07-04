@@ -1,0 +1,12 @@
+# Blender MTL File: 'pointer.blend'
+# Material Count: 1
+
+newmtl Material.001
+Ns 728.999998
+Ka 1.000000 1.000000 1.000000
+Kd 0.234564 0.265912 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.650000
+d 0.600000
+illum 9

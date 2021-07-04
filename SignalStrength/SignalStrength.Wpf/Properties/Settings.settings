@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SignalStrength.Wpf.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ChosenAccent" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#FF007ACC</Value>
+    </Setting>
+    <Setting Name="ChosenSecondaryAccent" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#FF0098FF</Value>
+    </Setting>
+    <Setting Name="ChosenTheme" Type="System.Uri" Scope="User">
+      <Value Profile="(Default)">/SignalStrength;component/Assets/byProgramingFactory.xaml</Value>
+    </Setting>
+    <Setting Name="ChosenFontSize" Type="FirstFloor.ModernUI.Presentation.FontSize" Scope="User">
+      <Value Profile="(Default)">Large</Value>
+    </Setting>
+    <Setting Name="Global_Interval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="ChosenLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ChosenTimeColumns" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="ChoosenRange" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

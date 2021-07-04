@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbotDescription1" xml:space="preserve">
+    <value>WiFi-Jakost Signal aplikacija prati jačinu WiFi signala!</value>
+    <comment>AboutPage</comment>
+  </data>
+  <data name="AbotDescription2" xml:space="preserve">
+    <value>WiFi-Jakost Signal applikacija ima otvoreni kod i možete pregledati izvorni kod!</value>
+    <comment>AboutPage</comment>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>O Nama</value>
+    <comment>AboutPage</comment>
+  </data>
+  <data name="AbstractTheme" xml:space="preserve">
+    <value>Apstraktna</value>
+    <comment>SettingsAppearanceViewModel</comment>
+  </data>
+  <data name="AppearanceSettingName" xml:space="preserve">
+    <value>Teme</value>
+    <comment>SettingsPage</comment>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>Aplikacija</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>Jakost Signala</value>
+  </data>
+  <data name="AppNameWifi" xml:space="preserve">
+    <value>WiFi-Jakost Signala</value>
+    <comment>MainWindow</comment>
+  </data>
+  <data name="C2DBand" xml:space="preserve">
+    <value>GHz:</value>
+    <comment>ChartTooltip2D</comment>
+  </data>
+  <data name="C2DChannal" xml:space="preserve">
+    <value>Kanal:</value>
+    <comment>ChartTooltip2D</comment>
+  </data>
+  <data name="C2DStrength" xml:space="preserve">
+    <value>Signal:</value>
+    <comment>ChartTooltip2D</comment>
+  </data>
+  <data name="C2DTime" xml:space="preserve">
+    <value>Vrijeme:</value>
+    <comment>ChartTooltip2D</comment>
+  </data>
+  <data name="Channal3DSettingContent" xml:space="preserve">
+    <value>Odaberite koliko želite redaka da se prikaže u 3D grafikonu kanala!</value>
+    <comment>Graphic3DSettingsPage</comment>
+  </data>
+  <data name="Channal3DSettingName" xml:space="preserve">
+    <value>Postavke 3D Kanala</value>
+  </data>
+  <data name="Channals" xml:space="preserve">
+    <value>Kanali</value>
+  </data>
+  <data name="Channals24" xml:space="preserve">
+    <value>2.4 GHz Kanali</value>
+    <comment>MainWindow</comment>
+  </data>
+  <data name="ChannalsHeatmapName" xml:space="preserve">
+    <value>Mapa Kanala</value>
+  </data>
+  <data name="Chart2DSettingContent" xml:space="preserve">
+    <value>Odaberite koliki raspon želite da se prikaže u 2D grafikonu mreža!</value>
+    <comment>ChartSettingsPage</comment>
+  </data>
+  <data name="Chart2DSettingName" xml:space="preserve">
+    <value>Postavke 2D Grafikona</value>
+    <comment>ChartSettingsPage</comment>
+  </data>
+  <data name="Charts" xml:space="preserve">
+    <value>Grafikon</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>ProgramingFactory©</value>
+  </data>
+  <data name="DarkTheme" xml:space="preserve">
+    <value>Tamna</value>
+    <comment>SettingsAppearanceViewModel</comment>
+  </data>
+  <data name="FontSizeSettingName" xml:space="preserve">
+    <value>Veličina slova:</value>
+    <comment>SplashScreenPage</comment>
+  </data>
+  <data name="Gauge" xml:space="preserve">
+    <value>Mjerač</value>
+  </data>
+  <data name="IntensityCbtContent" xml:space="preserve">
+    <value>Intenzitet</value>
+    <comment>ChannalGraphPage</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Jezik</value>
+  </data>
+  <data name="LanguageSettingsContent" xml:space="preserve">
+    <value>Odaberite Jezik!</value>
+    <comment>LanguageSettingsPage</comment>
+  </data>
+  <data name="LanguageSettingsContent2" xml:space="preserve">
+    <value>Trebate ponovno pokrenuti applikaciju poslije promjene jezika!</value>
+    <comment>LanguageSettingsPage</comment>
+  </data>
+  <data name="LargeFont" xml:space="preserve">
+    <value>Velika</value>
+    <comment>SettingsAppearanceViewModel</comment>
+  </data>
+  <data name="Legend" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="LegendBack" xml:space="preserve">
+    <value>Natrag</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendContentTitle" xml:space="preserve">
+    <value>Legenda 3D Kanala</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendCrowdValue" xml:space="preserve">
+    <value>Gužva</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendCube1" xml:space="preserve">
+    <value>... i</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendCube2" xml:space="preserve">
+    <value>Kocka</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendCube3" xml:space="preserve">
+    <value>u doljnem-desnom uglu !</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendDown" xml:space="preserve">
+    <value>Dolje</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendEmptyValue" xml:space="preserve">
+    <value>Bez vrijednosti</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendExtraCrowdValue" xml:space="preserve">
+    <value>Extra gužva</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendFront" xml:space="preserve">
+    <value>Naprijed</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendLeft" xml:space="preserve">
+    <value>Lijevo</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendMouseDoubleClick" xml:space="preserve">
+    <value>Dvoklik Mišom</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendMouseLeftClick" xml:space="preserve">
+    <value>Lijevi Klik Mišom</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendMouseRightClick" xml:space="preserve">
+    <value>Desni Klik Mišom</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendMouseWeeel" xml:space="preserve">
+    <value>Kotačič Miša</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendNavigate" xml:space="preserve">
+    <value>Navigirate u 3D grafikonu uz pomoć </value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendPan" xml:space="preserve">
+    <value>Pomicanje</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendRight" xml:space="preserve">
+    <value>Desno</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendRotate" xml:space="preserve">
+    <value>Rotiranje</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendSetView" xml:space="preserve">
+    <value>Postavi pogled na početno</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendSingleValue" xml:space="preserve">
+    <value>Jedna vrij.</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendThreeValue" xml:space="preserve">
+    <value>Tri vrij.</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendTwoValue" xml:space="preserve">
+    <value>Dve vrij.</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendUp" xml:space="preserve">
+    <value>Gore</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LegendZoom" xml:space="preserve">
+    <value>Zumiranje</value>
+    <comment>ChannalsLegendPage</comment>
+  </data>
+  <data name="LightTheme" xml:space="preserve">
+    <value>Svijetla</value>
+    <comment>SettingsAppearanceViewModel</comment>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>minuta</value>
+    <comment>small font size,Graphic3DSettingsPage</comment>
+  </data>
+  <data name="Networks" xml:space="preserve">
+    <value>Mreže</value>
+  </data>
+  <data name="NotConnectedText1" xml:space="preserve">
+    <value>Wifi nije uključen ...</value>
+    <comment>SplashScreenPage</comment>
+  </data>
+  <data name="NotConnectedText2" xml:space="preserve">
+    <value>WiFi treba biti uključen da bi WiFi-Jakost Signala radila ...</value>
+    <comment>SplashScreenPage</comment>
+  </data>
+  <data name="PaletteSettingName" xml:space="preserve">
+    <value>Palete:</value>
+    <comment>ThemeSettingsPage</comment>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+    <comment>NetInfoPage</comment>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>Raspon</value>
+    <comment>ChartSettingsPage</comment>
+  </data>
+  <data name="ResetDialogContent" xml:space="preserve">
+    <value>Želite li vratiti postavke na zadane vrijednosti ?</value>
+    <comment>RestartSettingsPage.cs</comment>
+  </data>
+  <data name="ResetDialogTitle" xml:space="preserve">
+    <value>Vratiti Postavke Na Zadano?</value>
+    <comment>RestartSettingsPage.cs</comment>
+  </data>
+  <data name="ResetMessageCancel1" xml:space="preserve">
+    <value>Nismo mjenjali postavke!</value>
+    <comment>RestartSettingsPage.cs</comment>
+  </data>
+  <data name="ResetMessageCancel2" xml:space="preserve">
+    <value>Postavke su ostale iste!</value>
+    <comment>RestartSettingsPage.cs</comment>
+  </data>
+  <data name="ResetMessageOK" xml:space="preserve">
+    <value>Postavke su vraćene na zadane vrijednosti!</value>
+    <comment>RestartSettingsPage.cs</comment>
+  </data>
+  <data name="ResetSettingContent" xml:space="preserve">
+    <value>Vrati postavke na zadane vrijednosti</value>
+    <comment>RestartSettingsPage</comment>
+  </data>
+  <data name="ResetSettingName" xml:space="preserve">
+    <value>Postavi Na Zadano</value>
+    <comment>RestartSettingsPage</comment>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Ažuriraj</value>
+    <comment>RestartSettingsPage</comment>
+  </data>
+  <data name="RestartSettingsBtnTooltip" xml:space="preserve">
+    <value>Ako je applikacija spora vratite postavke na zadane vrijednosti !</value>
+    <comment>RestartSettingsPage</comment>
+  </data>
+  <data name="RestartTooltip" xml:space="preserve">
+    <value>Ponovno pokreni aplikaciju</value>
+    <comment>RestartSettingsPage</comment>
+  </data>
+  <data name="Rows" xml:space="preserve">
+    <value>redaka</value>
+    <comment>Graphic3DSettingsPage</comment>
+  </data>
+  <data name="Scanning4Networks" xml:space="preserve">
+    <value>Tražimo mreže</value>
+  </data>
+  <data name="ScanSettingInterval" xml:space="preserve">
+    <value>Interval Skeniranja</value>
+    <comment>ScanSettingsPage</comment>
+  </data>
+  <data name="ScanSettingName" xml:space="preserve">
+    <value>Postavke Skeniranja</value>
+  </data>
+  <data name="ScanSettingSliderFast" xml:space="preserve">
+    <value>brzo</value>
+    <comment>small font size,ScanSettingsPage</comment>
+  </data>
+  <data name="ScanSettingSliderMainContent" xml:space="preserve">
+    <value>Postavite interval skeniranja mreža</value>
+    <comment>ScanSettingsPage</comment>
+  </data>
+  <data name="ScanSettingSliderSlow" xml:space="preserve">
+    <value>sporo</value>
+    <comment>small font size,ScanSettingsPage</comment>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value>sekunde</value>
+    <comment>small font size,Graphic3DSettingsPage</comment>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Postavke</value>
+  </data>
+  <data name="SmallFont" xml:space="preserve">
+    <value>Mala</value>
+    <comment>SettingsAppearanceViewModel</comment>
+  </data>
+  <data name="SnowflakesTheme" xml:space="preserve">
+    <value>Pahuljice</value>
+    <comment>SettingsAppearanceViewModel</comment>
+  </data>
+  <data name="SplashMainText1" xml:space="preserve">
+    <value>WiFi-Jakost Signala aplikacija skenira mrežu ...</value>
+    <comment>SplashScreenPage</comment>
+  </data>
+  <data name="SplashMainText2" xml:space="preserve">
+    <value>Za to vrijeme slobodno istražujte dalje ...</value>
+    <comment>SplashScreenPage</comment>
+  </data>
+  <data name="SplashSecText1" xml:space="preserve">
+    <value>[Treba 10 sekundi da skeniranje završi (promjenjivo u postavkama)]</value>
+    <comment>SplashScreenPage</comment>
+  </data>
+  <data name="SplashSecText2" xml:space="preserve">
+    <value>[by ProgramingFactory© (TvornicaProgramiranja)]</value>
+    <comment>SplashScreenPage</comment>
+  </data>
+  <data name="SSDCH" xml:space="preserve">
+    <value>Kanal</value>
+    <comment>NetInfoPage</comment>
+  </data>
+  <data name="SSDFrequency" xml:space="preserve">
+    <value>Frekvencija</value>
+    <comment>NetInfoPage</comment>
+  </data>
+  <data name="SSDLinkQuality" xml:space="preserve">
+    <value>KvalitetaLinka</value>
+    <comment>NetInfoPage</comment>
+  </data>
+  <data name="SSDMAC" xml:space="preserve">
+    <value>MacAdresa</value>
+    <comment>NetInfoPage</comment>
+  </data>
+  <data name="SSDName" xml:space="preserve">
+    <value>Ime</value>
+    <comment>NetInfoPage</comment>
+  </data>
+  <data name="SSDNetBand" xml:space="preserve">
+    <value>GHz</value>
+    <comment>NetInfoPage</comment>
+  </data>
+  <data name="SSDSignalQuality" xml:space="preserve">
+    <value>JakostSignala</value>
+    <comment>NetInfoPage</comment>
+  </data>
+  <data name="Thanks" xml:space="preserve">
+    <value>Zahvala</value>
+  </data>
+  <data name="ThanksContent" xml:space="preserve">
+    <value>Hvala svim ljudima iza biblioteka u License datoteci</value>
+    <comment>ThanksPage</comment>
+  </data>
+  <data name="ThemeSettingName" xml:space="preserve">
+    <value>Teme:</value>
+    <comment>SplashScreenPage</comment>
+  </data>
+  <data name="VisualSettingName" xml:space="preserve">
+    <value>Vizualni Doživljaj</value>
+  </data>
+  <data name="WindowsPhone" xml:space="preserve">
+    <value>Windows telefon</value>
+    <comment>SettingsAppearanceViewModel</comment>
+  </data>
+</root>

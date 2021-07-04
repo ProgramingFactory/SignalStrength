@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="SignalStrength.Wpf.ChartControls.NumericControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SignalStrength.Wpf.ChartControls"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:view="clr-namespace:SignalStrength.Wpf.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="90">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type local:NumericControl}"  >
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="MinHeight" Value="30"/>
+            <Setter Property="MinWidth" Value="45"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type local:NumericControl}">
+                        <Grid>
+                            <Border x:Name="Chrome">
+                                <Border.OpacityMask>
+                                    <VisualBrush>
+                                        <VisualBrush.Visual>
+                                            <Border Background="Black" 
+                                                    SnapsToDevicePixels="True"
+                                                    CornerRadius="4"
+                                                    Width="{Binding ActualWidth, RelativeSource={RelativeSource FindAncestor, AncestorType=local:NumericControl}}"
+                                                    Height="{Binding ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType=local:NumericControl}}" 
+                                                    />
+                                        </VisualBrush.Visual>
+                                    </VisualBrush>
+                                </Border.OpacityMask>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5*" />
+                                        <ColumnDefinition Width="2*" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox x:Name="tb_main" 
+                                             IsEnabled="False"
+                                             VerticalContentAlignment="Center"
+                                             Padding="5,1" 
+                                             Grid.Column="0"
+                                             Grid.RowSpan="2"
+                                             HorizontalContentAlignment="Center"
+                                             />
+                                    <Button x:Name="PART_UpButton"  
+                                                  Grid.Column="1"
+                                                  Grid.Row="0"
+                                                  Width="auto" 
+                                                  Height="auto"
+
+                                                  Padding="0"  
+                                            BorderThickness="0"
+                                            >
+                                        <Button.Content>
+                                            <Viewbox Margin="4">
+                                                <Path Data="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                                                      Fill="{DynamicResource WindowText}"
+                                                    Stretch="UniformToFill"
+                                                      />
+                                            </Viewbox>
+                                        </Button.Content>
+                                    </Button>
+                                    <Button x:Name="PART_DownButton"
+                                                  Grid.Column="1"
+                                                  Grid.Row="1"
+                                                  Width="auto"
+                                                  Height="auto"
+
+                                                  Padding="0"
+                                                  BorderThickness="0" >
+                                        <Button.Content>
+                                            <Viewbox Margin="4">
+                                                <Path Data="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                                                      Fill="{DynamicResource WindowText}"
+                                                        Stretch="UniformToFill"/>
+                                            </Viewbox>
+                                        </Button.Content>
+                                    </Button>
+                                    <Border x:Name="border"
+                                            BorderBrush="{DynamicResource ButtonBorderHover}"
+
+                                            BorderThickness="1"
+                                            CornerRadius="4" 
+                                            Grid.RowSpan="2" 
+                                            Grid.ColumnSpan="2"
+                                            Padding="0"
+                                            Margin="0" 
+                                            />
+                                    <ContentPresenter x:Name="ContentPresenter"
+                                                      HorizontalAlignment="Center"
+                                                      VerticalAlignment="Center"
+                                                      Content="{TemplateBinding Value}"
+                                                      TextElement.Foreground="{TemplateBinding Foreground}"
+                                                      ContentSource="{TemplateBinding Value}"
+                                                      TextElement.FontWeight="{TemplateBinding FontWeight}"
+                                                      TextElement.FontFamily="{TemplateBinding FontFamily}"
+                     
+                                                      Grid.RowSpan="2"
+                                                      />
+                                </Grid>
+                            </Border>
+
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Value="{DynamicResource ButtonTextDisabled}" Property="Foreground" />
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter TargetName="tb_main" Property="Background" Value="{DynamicResource ButtonBackgroundHover}" />
+                                <Setter Value="{DynamicResource ButtonBackgroundHover}" Property="Background" />
+                                <Setter TargetName="border" Value="{DynamicResource Accent}" Property="BorderBrush" />
+                                <Setter Value="{DynamicResource ButtonTextHover}" Property="Foreground" />
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="true">
+                                <Setter TargetName="border" Value="{DynamicResource SecondaryAccent}" Property="BorderBrush" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+  
+</UserControl>

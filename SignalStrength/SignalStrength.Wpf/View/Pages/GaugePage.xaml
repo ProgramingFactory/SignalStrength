@@ -1,0 +1,205 @@
+﻿<UserControl x:Class="SignalStrength.Wpf.View.Pages.GaugePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SignalStrength.Wpf.View.Pages"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:model="clr-namespace:SignalStrength.Wpf.Model"
+             xmlns:gauge="clr-namespace:CircularGauge;assembly=CircularGauge"
+             xmlns:res="clr-namespace:SignalStrength.Wpf.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.DataContext>
+        <model:NetInfoModel/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"  />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="grdGauge" Grid.Column="2" Margin="{StaticResource SplitRight}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+
+
+            <!--Left Gauge-->
+            <Viewbox Grid.Column="0" Grid.Row="1">
+                <gauge:CircularGaugeControl x:Name="GaugeLinkQuality" 
+                                        Radius="100" 
+                                        ScaleRadius="92" 
+                                        ScaleStartAngle="120" 
+                                        ScaleSweepAngle="300"
+                                        PointerLength="60" 
+                                        PointerCapRadius="45" 
+                                        MaxValue="100" 
+                                        MajorDivisionsCount="10" 
+                                        MinorDivisionsCount="10" 
+                                        OptimalRangeStartValue="65"
+                                        OptimalRangeEndValue="85"
+                                        ImageSource="/SignalStrength;component/Resources/wifi2.png"
+                                        ImageSize="25,25"
+                                        RangeIndicatorThickness="5"
+                                        RangeIndicatorRadius="65"
+                                        RangeIndicatorLightRadius="10"
+                                        RangeIndicatorLightOffset="70"
+                                        ScaleLabelRadius="78"
+                                        ScaleLabelSize="40,20"
+                                        ScaleLabelFontSize="10"
+                                        ScaleLabelForeground="White"
+                                        MajorTickSize="13,3"
+                                        MinorTickSize="5,2"
+                                        MajorTickColor="White"
+                                        MinorTickColor="LightGray"
+                                        ImageOffset="-40"
+                                        PointerThickness ="20"
+                                        DialTextOffset="40"
+                                        DialText="{x:Static res:Resources.SSDSignalQuality}"
+                                        DialTextColor="DarkRed" Margin="0,150,0,0" BelowOptimalRangeColor="#FFDA0F0F" AboveOptimalRangeColor="#FF009314" OptimalRangeColor="#FFDECE28" GaugeBackgroundColor="#FF850268"
+                                        />
+            </Viewbox>
+
+            <!--Right Gauge-->
+            <Viewbox Grid.Row="1" Grid.Column="2">
+                <gauge:CircularGaugeControl x:Name="GaugeSigStrenght"  
+                                        Radius="100" 
+                                        ScaleRadius="70" 
+                                        ScaleStartAngle="120" 
+                                        ScaleSweepAngle="300"
+                                        PointerLength="60" 
+                                        PointerCapRadius="35" 
+                                        MajorDivisionsCount="10" 
+                                        MinorDivisionsCount="5"
+                                        ImageSource="/SignalStrength;component/Resources/Wifi2.png"
+                                        ImageSize="30,30"
+                                        RangeIndicatorThickness="0"
+                                        RangeIndicatorRadius="75"
+                                        RangeIndicatorLightRadius="8"
+                                        RangeIndicatorLightOffset="60"
+                                        ScaleLabelRadius="90"
+                                        ScaleLabelSize="40,20"
+                                        ScaleLabelFontSize="8"
+                                        ScaleLabelForeground="White"
+                                        MajorTickSize="6,3"
+                                        MinorTickSize="3,1"
+                                        MajorTickColor="White"
+                                        MinorTickColor="LightGray"
+                                        ImageOffset="-40"
+                                        PointerThickness ="5"
+                                        DialTextOffset="34"
+                                        DialText="{x:Static res:Resources.SSDLinkQuality}"
+                                        DialTextColor="Black" 
+                                        BelowOptimalRangeColor="Red" 
+                                        AboveOptimalRangeColor="#FF18A401"
+                                        Margin="0,150,0,0" 
+                                        IsManipulationEnabled="True" 
+                                        MaxValue="100"
+                                        OptimalRangeColor="#FFE4D00A" 
+                                        ScaleValuePrecision="10" 
+                                        OptimalRangeStartValue="50" 
+                                        OptimalRangeEndValue="68" 
+                                         GaugeBackgroundColor="#FF0034BD"
+                                        >
+                    <gauge:CircularGaugeControl.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA3AFD6" Offset="0.321"/>
+                            <GradientStop Color="White" Offset="0.674"/>
+                            <GradientStop Color="#FF718597" Offset="0.375"/>
+                            <GradientStop Color="#FF617584" Offset="1"/>
+                        </LinearGradientBrush>
+                    </gauge:CircularGaugeControl.BorderBrush>
+                </gauge:CircularGaugeControl>
+            </Viewbox>
+
+            <!--Main Gauge-->
+            <Viewbox Grid.Column="1" Grid.Row="1">
+                <gauge:CircularGaugeControl x:Name="GaugeRSSI"  
+                                        Radius="150" 
+                                        ScaleRadius="112" 
+                                        ScaleStartAngle="120" 
+                                        ScaleSweepAngle="300"
+                                        PointerLength="90" 
+                                        PointerCapRadius="45" 
+                                        MajorDivisionsCount="20" 
+                                        MinorDivisionsCount="5" 
+                                        ImageSource="/SignalStrength;component/Resources/Wifi2.png"
+                                        ImageSize="40,40"
+                                        RangeIndicatorThickness="8"
+                                        RangeIndicatorRadius="120"
+                                        RangeIndicatorLightRadius="10"
+                                        RangeIndicatorLightOffset="80"
+                                        ScaleLabelRadius="90"
+                                        ScaleLabelSize="40,20"
+                                        ScaleLabelFontSize="10"
+                                        ScaleLabelForeground="LightGray"
+                                        MajorTickSize="10,3"
+                                        MinorTickSize="3,1"
+                                        MajorTickColor="LightGray"
+                                        MinorTickColor="LightGray"
+                                        ImageOffset="-55"
+                                        GaugeBackgroundColor="Black"
+                                        PointerThickness ="16" 
+                                        DialTextOffset="40" 
+                                        DialText="Signal [RSSI]"
+                                        DialTextColor="#FF005B89" 
+                                        BelowOptimalRangeColor="Red" 
+                                        OptimalRangeColor="#FFD99401"
+                                        ScaleValuePrecision="1" 
+                                        MinValue="-99" 
+                                        Height="300" 
+                                        OptimalRangeStartValue="-70" 
+                                        OptimalRangeEndValue="-60" 
+                                        AboveOptimalRangeColor="#FF0AA01C"
+                                        />
+            </Viewbox>
+
+        </Grid>
+
+        <GridSplitter Grid.Column="1" Width="1" Background="{DynamicResource Accent}"/>
+
+        <ScrollViewer>
+            <ListView x:Name="lvNames" ItemsSource="{Binding NetDataCollection, UpdateSourceTrigger=PropertyChanged}"
+                      Grid.Column="1" 
+                      Grid.Row="1"
+                      VirtualizingPanel.IsVirtualizing="False"
+                      >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn x:Name="namesGVC"  
+                                        DisplayMemberBinding="{Binding Name ,UpdateSourceTrigger=PropertyChanged}"
+                                        Header="{x:Static res:Resources.Networks}"
+                                        />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ScrollViewer>
+
+        <StackPanel x:Name="progBar" 
+                    VerticalAlignment="Center"
+                    Grid.Column="0" Grid.Row="1"
+                    Visibility="{Binding IsScanning,Converter={StaticResource BoolToVisibilityConverter}}">
+            <mui:ModernProgressRing x:Name="snakeProgBar" 
+                                    Style="{StaticResource  WaveProgressRingStyle}"
+                                    IsActive="True"  Height="40" 
+                                    HorizontalAlignment="Left"
+                                    Margin="25,0,0,0" />
+            <Label x:Name="infoLBL" Content="{x:Static res:Resources.Scanning4Networks}"/>
+        </StackPanel>
+
+    </Grid>
+
+</UserControl>
+

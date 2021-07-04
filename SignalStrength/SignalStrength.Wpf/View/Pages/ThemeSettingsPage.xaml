@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="SignalStrength.Wpf.View.Pages.ThemeSettingsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SignalStrength.Wpf.View.Pages"
+             xmlns:res="clr-namespace:SignalStrength.Wpf.Properties"
+             mc:Ignorable="d" 
+             xmlns:view="clr-namespace:SignalStrength.Wpf.View"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             d:DesignHeight="400" d:DesignWidth="400"
+             >
+    <UserControl.DataContext>
+        <view:SettingsAppearanceViewModel x:Name="dc"/>
+    </UserControl.DataContext>
+
+    <Grid HorizontalAlignment="Left">
+
+
+        <ScrollViewer>
+            <StackPanel x:Name="Panel" MinWidth="150">
+                <TextBlock Text="{x:Static res:Resources.AppearanceSettingName}"
+                           Style="{StaticResource Heading2}" Margin="0,0,0,8" />
+
+                <ListBox ItemsSource="{Binding AccentColors}"
+                         SelectedItem="{Binding SelectedAccentColor, Mode=TwoWay}"
+                         Margin="0,0,0,16" >
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel  MaxWidth="200" HorizontalAlignment="Left" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Rectangle Width="25" Height="25" Margin="2" >
+                                <Rectangle.Fill>
+                                    <SolidColorBrush x:Name="Brush" Color="{Binding}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <Grid HorizontalAlignment="Left">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition MinWidth="120"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="{x:Static res:Resources.PaletteSettingName}" VerticalAlignment="Center" Margin="0,0,16,4" />
+                    <ComboBox Grid.Column="1" ItemsSource="{Binding Palettes}" SelectedItem="{Binding SelectedPalette, Mode=TwoWay}" VerticalAlignment="Center" Margin="0,0,0,4" />
+
+                    <TextBlock Text="{x:Static res:Resources.ThemeSettingName}"  Grid.Row="1" VerticalAlignment="Center" Margin="0,0,16,4" />
+                    <ComboBox Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Themes}" SelectedItem="{Binding SelectedTheme, Mode=TwoWay}" DisplayMemberPath="DisplayName" VerticalAlignment="Center" Margin="0,0,0,4" 
+                              SelectedIndex="0" />
+
+                    <TextBlock Text="{x:Static res:Resources.FontSizeSettingName}" Grid.Row="2" VerticalAlignment="Center" Margin="0,0,16,0" />
+                    <ComboBox Grid.Row="2" Grid.Column="1" ItemsSource="{Binding FontSizes}" SelectedItem="{Binding SelectedFontSize, Mode=TwoWay}" VerticalAlignment="Center" />
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
