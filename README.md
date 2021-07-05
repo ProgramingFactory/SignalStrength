@@ -7,11 +7,9 @@ You can find Windows installers in ![Releases](https://github.com/ProgramingFact
 
 
 App is localized in Croatian <img src="https://github.com/ProgramingFactory/SignalStrength/blob/master/SignalStrength/SignalStrength.Wpf/Resources/hr-HR.png" width="32"> and <img src="https://github.com/ProgramingFactory/SignalStrength/blob/master/SignalStrength/SignalStrength.Wpf/Resources/en.png" width="32"> English
-  
-  
-  
-  
-  
+
+&nbsp;
+
 _It is said "a picture is worth a thousand words"_  :arrow_down:
   
   
