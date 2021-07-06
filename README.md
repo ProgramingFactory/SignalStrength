@@ -46,6 +46,6 @@ _This is an application for informative monitoring of the state wifi signal stre
 
 _This is not an official tool for measuring and proving signal strength._  
 
-<p align='right'>Look :eyes: Igor ... i publish this app ... :star2: </p>
+<p align='right'>Look :eyes: Igor ... i publish this app ... :star2::cry: </p>
 
 
