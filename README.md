@@ -3,7 +3,7 @@
 
 This is app for ***Windows*** only.    
 
-You can find Windows installers in ![Releases](https://github.com/ProgramingFactory/SignalStrength/releases) section!
+You can find Windows installers in [Releases](https://github.com/ProgramingFactory/SignalStrength/releases) section!
 
 
 App is localized in Croatian <img src="https://github.com/ProgramingFactory/SignalStrength/blob/master/SignalStrength/SignalStrength.Wpf/Resources/hr-HR.png" width="32"> and <img src="https://github.com/ProgramingFactory/SignalStrength/blob/master/SignalStrength/SignalStrength.Wpf/Resources/en.png" width="32"> English
@@ -32,7 +32,7 @@ _It is said "a picture is worth a thousand words"_  :arrow_down:
   
 WiFi - Jakost Signala aplikacija za praćenje jačine signala; Wifi - Monitor;</pre> :wink: 
 
-Windows Instalatera možete pronaći u ![Releases](https://github.com/ProgramingFactory/SignalStrength/releases) odjeljku!      
+Windows Instalatera možete pronaći u [Releases](https://github.com/ProgramingFactory/SignalStrength/releases) odjeljku!      
 
 &nbsp;
 &nbsp;  
