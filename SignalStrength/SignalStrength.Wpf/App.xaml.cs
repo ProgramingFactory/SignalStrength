@@ -62,6 +62,7 @@ using System.Configuration;
         /// </summary>
         private void Current_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
+            Core.Logging.Logger.Log(e.Exception.StackTrace, Core.Logging.Logger.LogLevel.FATAL_EXCEPTION);
             Core.Logging.Logger.Log(e.Exception.Message, Core.Logging.Logger.LogLevel.FATAL_EXCEPTION);
 
             if (e.Exception.InnerException != null)
