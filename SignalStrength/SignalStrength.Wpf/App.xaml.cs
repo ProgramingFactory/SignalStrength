@@ -1,7 +1,7 @@
 ﻿namespace SignalStrength.Wpf
 {
     using System;
-using System.Configuration;
+    using System.Configuration;
     using System.Data;
     using System.Linq;
     using System.Windows;
